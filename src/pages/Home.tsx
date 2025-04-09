@@ -5,22 +5,22 @@ const Home = () => {
   const categories = [
     {
       title: "Pure Pattu Sarees",
-      image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=800",
+      image: "/featured/pattusaree.jpg",
       price: "Starting from ₹5999"
     },
     {
       title: "Designer Tops",
-      image: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&q=80&w=800",
+      image: "/featured/tops.jpg",
       price: "Starting from ₹999"
     },
     {
       title: "Traditional Ornaments",
-      image: "https://images.unsplash.com/photo-1615886753866-79396abc5c44?auto=format&fit=crop&q=80&w=800",
+      image: "/featured/ornaments.jpg",
       price: "Starting from ₹1999"
     },
     {
-      title: "Comfortable Nighties",
-      image: "https://images.unsplash.com/photo-1583391733956-6c77a55a5d9e?auto=format&fit=crop&q=80&w=800",
+      title: "Sarees",
+      image: "/featured/sarees.jpg",
       price: "Starting from ₹599"
     }
   ];
