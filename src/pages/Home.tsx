@@ -31,13 +31,6 @@ const Home = () => {
 
       {/* Hero Section */}
       <div className="relative h-[600px]">
-      <div className="absolute top-6 left-6 bg-white rounded-full p-2 shadow-lg w-20 h-20 flex items-center justify-center">
-    <img
-      src="/logo.png" // Replace with actual path to your logo
-      alt="Tripura Saree Logo"
-      className="w-full h-full object-contain rounded-full"
-    />
-  </div>
         <img
           src="https://i.pinimg.com/236x/a1/b4/83/a1b4831ff5b4c21e40a00f96ac021cb3.jpg"
           alt="Tripura Saree Collections"

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Sparkles, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,17 +13,17 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-  <Link to="/" className="flex items-center space-x-2">
-    <img
-      src="/logo.png" // Ensure this file exists in your public folder
-      alt="Tripura Sarees Logo"
-      className="h-8 w-8 rounded-full object-contain"
-    />
-    <span className="text-2xl font-serif font-bold text-gray-900">
-      Tripura Saree Collections
-    </span>
-  </Link>
-</div>
+            <Link to="/" className="flex items-center gap-3 sm:gap-4">
+              <img
+                src="/logo.png"
+                alt="Tripura Sarees Logo"
+                className="h-10 w-10 rounded-full object-contain"
+              />
+              <span className="text-lg sm:text-2xl font-serif font-bold text-gray-900">
+                Tripura Saree Collections
+              </span>
+            </Link>
+          </div>
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
@@ -44,7 +44,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden px-4 pb-4 space-y-2">
+        <div className="md:hidden px-6 pt-2 pb-4 space-y-3 bg-white shadow-inner">
           <Link to="/" onClick={toggleMenu} className="block text-gray-700 hover:text-pink-600">Home</Link>
           <Link to="/about" onClick={toggleMenu} className="block text-gray-700 hover:text-pink-600">About Us</Link>
           <Link to="/collection" onClick={toggleMenu} className="block text-gray-700 hover:text-pink-600">Collection</Link>
