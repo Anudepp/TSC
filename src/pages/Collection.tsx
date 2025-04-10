@@ -1,47 +1,46 @@
-import React from 'react';
 
 const Collection = () => {
   const sarees = [
     {
       id: 1,
       name: "Traditional Silk Saree",
-      price: "$299",
-      image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=800",
+      price: "₹2500",
+      image: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQV3VxzJ1Cz4hpy-CzKVdtM3W5XDN8KjGEurhEGGfk4UW6H95Iyo2zPORMee-5-BjvG7KStUVzkKKE0mlL4CiXqHcnV7oxHYX9N0XOR_TDasqb06OlFMDFr&usqp=CAc",
       description: "Handwoven pure silk saree with traditional motifs"
     },
     {
       id: 2,
       name: "Designer Wedding Saree",
-      price: "$599",
-      image: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&q=80&w=800",
+      price: "₹4500",
+      image: "https://lajreedesigner.com/cdn/shop/products/KP-3018_2_400x600_crop_center.jpg?v=1660711538",
       description: "Luxurious bridal saree with intricate embroidery"
     },
     {
       id: 3,
       name: "Contemporary Fusion Saree",
-      price: "$399",
-      image: "https://images.unsplash.com/photo-1615886753866-79396abc5c44?auto=format&fit=crop&q=80&w=800",
+      price: "₹3500",
+      image: "https://lajreedesigner.com/cdn/shop/files/ShrijiAvadh-SC-220-Yellow_2_400x600_crop_center.jpg?v=1711435262",
       description: "Modern design with traditional elements"
     },
     {
       id: 4,
       name: "Casual Cotton Saree",
-      price: "$199",
-      image: "https://images.unsplash.com/photo-1583391733956-6c77a55a5d9e?auto=format&fit=crop&q=80&w=800",
+      price: "₹5000",
+      image: "https://lajreedesigner.com/cdn/shop/products/MurtiNx-156-Firozi_2080add6-fbac-41a5-b0ac-fa766301214a_400x600_crop_center.jpg?v=1673262225",
       description: "Comfortable daily wear cotton saree"
     },
     {
       id: 5,
       name: "Party Wear Saree",
-      price: "$449",
-      image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=800",
+      price: "₹4490",
+      image: "https://lajreedesigner.com/cdn/shop/files/ShrijiAvadh-SC-249-Pink_2_400x600_crop_center.jpg?v=1714046637",
       description: "Elegant party wear with modern design"
     },
     {
       id: 6,
       name: "Festival Collection",
-      price: "$349",
-      image: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&q=80&w=800",
+      price: "₹3490",
+      image: "https://lajreedesigner.com/cdn/shop/files/Shubh-SF-591Orgenza-DarkPink_1_400x600_crop_center.jpg?v=1708329331",
       description: "Vibrant festive wear saree"
     }
   ];
