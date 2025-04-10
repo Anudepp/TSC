@@ -32,7 +32,7 @@ const Home = () => {
       {/* Hero Section */}
       <div className="relative h-[600px]">
         <img
-          src="https://i.pinimg.com/236x/a1/b4/83/a1b4831ff5b4c21e40a00f96ac021cb3.jpg"
+          src="/featured/backgroung.jpg"
           alt="Tripura Saree Collections"
           className="w-full h-full object-cover"
         />
