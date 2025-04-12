@@ -4,7 +4,6 @@ import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
@@ -42,9 +41,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu with animation */}
       {isOpen && (
-        <div className="md:hidden px-6 pt-2 pb-4 space-y-3 bg-white shadow-inner">
+        <div className="md:hidden px-6 pt-2 pb-4 space-y-3 bg-white shadow-inner animate-slideDown transition-all duration-300 ease-out">
           <Link to="/" onClick={toggleMenu} className="block text-gray-700 hover:text-pink-600">Home</Link>
           <Link to="/about" onClick={toggleMenu} className="block text-gray-700 hover:text-pink-600">About Us</Link>
           <Link to="/collection" onClick={toggleMenu} className="block text-gray-700 hover:text-pink-600">Collection</Link>
