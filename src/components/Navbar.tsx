@@ -40,8 +40,10 @@ const NavLinks: FC<NavLinksProps> = ({ isMobile = false, onClick }) => (
         to={to}
         onClick={onClick}
         className={`${
-          isMobile ? 'block' : ''
-        } text-gray-700 hover:text-pink-600 transition-colors`}
+          isMobile ? 'block text-base' : 'relative inline-block text-sm'
+        } text-gray-900 hover:text-rose-600 transition-colors duration-200
+          ${!isMobile ? 'after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-rose-600 hover:after:w-full after:transition-all after:duration-300' : ''}
+        `}
       >
         {label}
       </Link>
@@ -54,7 +56,7 @@ const Navbar: FC = () => {
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-rose-100 shadow-md sticky top-0 z-50 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Logo />
@@ -68,7 +70,7 @@ const Navbar: FC = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-gray-700 hover:text-pink-600 focus:outline-none"
+              className="text-gray-900 hover:text-rose-600 focus:outline-none"
               aria-label="Toggle menu"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -79,7 +81,9 @@ const Navbar: FC = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden px-6 pt-2 pb-4 space-y-3 bg-white shadow-inner animate-slideDown transition-all duration-300 ease-out">
+        <div
+          className="md:hidden px-4 pt-2 pb-2 space-y-2 bg-rose-100 shadow-inner animate-slideDown transition-all duration-300 ease-out"
+        >
           <NavLinks isMobile onClick={toggleMenu} />
         </div>
       )}
